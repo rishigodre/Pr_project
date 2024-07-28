@@ -2,7 +2,7 @@ import { Flex, Spacer, Image, Text } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import DocDefault from '/DocDefault.png';
 
-function Navbar() {
+function DocNavbar() {
   //const navigate = useNavigate();
 
   return (
@@ -36,4 +36,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default DocNavbar;

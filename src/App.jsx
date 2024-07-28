@@ -1,5 +1,5 @@
 import './App.css';
-//import Landing from './pages/Landing';
+import Landing from './pages/Landing';
 import Doctor from './pages/Doctor';
 import { Route, Routes } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -17,7 +17,11 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={isLoading ? <Preloader /> : <Doctor />} />
+        <Route path="/" element={isLoading ? <Preloader /> : <Landing />} />
+        <Route
+          path="/Doctor"
+          element={isLoading ? <Preloader /> : <Doctor />}
+        />
       </Routes>
     </>
   );
