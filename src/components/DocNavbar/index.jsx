@@ -18,7 +18,12 @@ function Navbar() {
         zIndex="1"
         mb="4rem"
       >
-        <Text color="#005856" pl={['3rem']} fontSize="2.2rem" fontWeight="600">
+        <Text
+          color="#005856"
+          pl={['3rem']}
+          fontSize={['1.1rem', '2.2rem']}
+          fontWeight="600"
+        >
           Welcome Dr. XYZ
         </Text>
         <Spacer />
