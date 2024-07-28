@@ -28,7 +28,7 @@ function DocNavbar() {
         </Text>
         <Spacer />
         {/* there is some confusion regarding this link tag */}
-        <Link to="/">
+        <Link to="/Doctor">
           <Image src={DocDefault} alt="DocDefault" />
         </Link>
       </Flex>
