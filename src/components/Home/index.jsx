@@ -50,7 +50,7 @@ const Hero = () => {
             color="white"
             _hover={{ bg: 'highlightGreen' }}
             onClick={() => {
-              navigate('/OrderList');
+              navigate('/Doctor');
               // go to
             }}
           >
