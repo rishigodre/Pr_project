@@ -41,8 +41,8 @@ const Hero = () => {
             textAlign="center"
             mb="1rem"
           >
-            APD creates quick prescriptions with a qr for person-less medicine
-            disposal
+            APD creates quick prescriptions with a qr for contact-less drug
+            delivery
           </Text>
 
           <Button
@@ -51,6 +51,7 @@ const Hero = () => {
             _hover={{ bg: 'highlightGreen' }}
             onClick={() => {
               navigate('/OrderList');
+              // go to
             }}
           >
             Prescribe
