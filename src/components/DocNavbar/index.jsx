@@ -16,7 +16,7 @@ function DocNavbar() {
         boxShadow="0px 2px 3px lightgray"
         pr={['15px', '30px']}
         zIndex="1"
-        mb="4rem"
+        mb="2rem"
       >
         <Text
           color="primaryGreen"

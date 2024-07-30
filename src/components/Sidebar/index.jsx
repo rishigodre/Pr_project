@@ -19,7 +19,7 @@ function Sidebar() {
         top="0"
         positon="sticky"
         float="left"
-        h="100vh"
+        height="100rem"
         boxShadow="0px 2px 3px lightgray"
         //pr={['15px', '30px']}
         pt="12px"
