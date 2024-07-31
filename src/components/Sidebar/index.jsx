@@ -94,6 +94,7 @@ function Sidebar() {
             // onClick={() => navigate('/logout')}
             justifyContent="left"
             gap="0.4rem"
+            onClick={() => navigate('/')}
           >
             <FiLogOut size="1.5rem" />
             Logout

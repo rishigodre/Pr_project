@@ -29,7 +29,7 @@ function DocNavbar() {
         </Text>
         <Spacer />
         {/* there is some confusion regarding this link tag */}
-        <Link to="/doctor">
+        <Link to="/homepage">
           <Image src={DocDefault} alt="DocDefault" />
         </Link>
       </Flex>
