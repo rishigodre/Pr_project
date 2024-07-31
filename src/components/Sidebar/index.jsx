@@ -1,5 +1,4 @@
 import { Flex, Image, Button } from '@chakra-ui/react';
-import { RiHomeLine } from 'react-icons/ri';
 import { TbReportSearch } from 'react-icons/tb';
 import { TfiWrite } from 'react-icons/tfi';
 import { FiLogOut } from 'react-icons/fi';
@@ -50,20 +49,6 @@ function Sidebar() {
             fontSize="1.3rem"
             bg="primaryGreen"
             _hover={{ bg: '#003A3C' }}
-            onClick={() => navigate('/doctor')}
-            justifyContent="left"
-            gap="0.4rem"
-          >
-            <RiHomeLine size="1.5rem" />
-            Home
-          </Button>
-
-          <Button
-            color="#ffffff"
-            fontWeight="400"
-            fontSize="1.3rem"
-            bg="primaryGreen"
-            _hover={{ bg: '#003A3C' }}
             onClick={() => navigate('/doctor/prescribe')}
             justifyContent="left"
             gap="0.4rem"
@@ -91,7 +76,10 @@ function Sidebar() {
             fontSize="1.3rem"
             bg="primaryGreen"
             _hover={{ bg: '#003A3C' }}
-            // onClick={() => navigate('/logout')}
+            onClick={() => {
+              navigate('/');
+              localStorage.removeItem('userName');
+            }}
             justifyContent="left"
             gap="0.4rem"
           >

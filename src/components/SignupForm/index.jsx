@@ -98,7 +98,7 @@ export default function SignupForm() {
         isClosable: true,
         position: 'top',
       });
-      navigate('/doctor');
+      navigate('/doctor/prescribe');
       setLoading(false);
     } catch (error) {
       setLoading(false);

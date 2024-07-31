@@ -94,7 +94,7 @@ export default function LoginForm() {
         position: 'top',
       });
 
-      navigate('/doctor');
+      navigate('/doctor/prescribe');
       setLoading(false);
     } catch (error) {
       setLoading(false);
