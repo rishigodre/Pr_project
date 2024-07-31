@@ -29,18 +29,42 @@ function PrintPreview() {
           color="primaryGreen"
           fontSize={['1.1rem', '1.8rem']}
           fontWeight="550"
-          mb="2.5rem"
+          mb="1rem"
         >
           YOUR PRESCRIPTION
         </Text>
-        <Text
+        <Flex justifyContent="space-between" mb="2rem">
+          <Flex direction="column" alignItems="left" gap="0.2rem">
+            <Flex>
+              <Text fontWeight="bold" fontStyle="italic">
+                Dr. Patra Anil Kumar
+              </Text>
+            </Flex>
+
+            <Flex>
+              <Text fontWeight="bold" fontStyle="italic">
+                REG NO:
+              </Text>
+              <Text fontWeight="bold" fontStyle="italic">
+                26986
+              </Text>
+            </Flex>
+
+            <Flex>
+              <Text fontWeight="bold" fontStyle="italic">
+                West Bengal Medical Council
+              </Text>
+            </Flex>
+          </Flex>
+        </Flex>
+        <Flex
           color="primaryGreen"
           fontSize={['1.1rem', '1.5rem']}
           fontWeight="550"
           mb="1.5rem"
         >
           Patient info
-        </Text>
+        </Flex>
         <Flex justifyContent="space-between">
           <Flex direction="column" alignItems="left" gap="0.5rem">
             <Flex>
