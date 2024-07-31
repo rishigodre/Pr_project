@@ -79,8 +79,20 @@ export default function LoginForm() {
     setLoading(true);
     try {
       const result = await makeLoginRequest();
+
       addAuth();
-      valueSetter(result.doctorName, 'doctorName');
+      console.log(result);
+      valueSetter(result.data.doctorName, 'doctorName');
+      localStorage.setItem('userName', result.data.userName);
+
+      toast({
+        title: 'Logged in !',
+        description: `Welcome Dr. ${result.data.doctorName}`,
+        status: 'success',
+        duration: 2000,
+        isClosable: true,
+        position: 'top',
+      });
 
       navigate('/doctor');
       setLoading(false);
@@ -154,7 +166,7 @@ export default function LoginForm() {
                   <InputGroup>
                     <Input
                       type={showPassword ? 'text' : 'password'}
-                      focusBorderColor="#ce1567"
+                      focusBorderColor="primaryGreen"
                       bg="#ecedf6"
                       id="password"
                       name="password"
@@ -217,7 +229,7 @@ export default function LoginForm() {
             color="primaryGreen"
             fontWeight="600"
           >
-            <Link to="/signup">Register</Link>
+            <Link to="/verify">Register</Link>
           </Text>
         </Stack>
       </Flex>
