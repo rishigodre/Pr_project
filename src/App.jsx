@@ -10,6 +10,7 @@ import PrintPreview from './components/PrintPreview';
 import Login from './pages/Login';
 import Verify from './pages/Verify';
 import SignUp from './pages/SignUp';
+import HomePage from './pages/HomePage';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -39,6 +40,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/verify" element={<Verify />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/homepage" element={<HomePage />} />
       </Routes>
     </>
   );

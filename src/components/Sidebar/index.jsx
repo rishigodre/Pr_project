@@ -50,7 +50,7 @@ function Sidebar() {
             fontSize="1.3rem"
             bg="primaryGreen"
             _hover={{ bg: '#003A3C' }}
-            onClick={() => navigate('/doctor')}
+            onClick={() => navigate('/homepage')}
             justifyContent="left"
             gap="0.4rem"
           >
