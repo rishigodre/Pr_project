@@ -1,5 +1,4 @@
 import { Flex, Image, Button } from '@chakra-ui/react';
-import { RiHomeLine } from 'react-icons/ri';
 import { TbReportSearch } from 'react-icons/tb';
 import { TfiWrite } from 'react-icons/tfi';
 import { FiLogOut } from 'react-icons/fi';
@@ -19,13 +18,14 @@ function Sidebar() {
         top="0"
         positon="sticky"
         float="left"
-        h="100vh"
+        height="100rem"
         boxShadow="0px 2px 3px lightgray"
         //pr={['15px', '30px']}
         pt="12px"
         bgColor="primaryGreen"
         zIndex="1"
         mb="4rem"
+        className="no-print"
       >
         <Flex justifyContent="center">
           <Link to="/">
@@ -43,20 +43,6 @@ function Sidebar() {
         </Flex>
 
         <Flex flexDirection="column" px="1rem" pt="6rem" gap="1rem">
-          <Button
-            color="#ffffff"
-            fontWeight="400"
-            fontSize="1.3rem"
-            bg="primaryGreen"
-            _hover={{ bg: '#003A3C' }}
-            onClick={() => navigate('/doctor')}
-            justifyContent="left"
-            gap="0.4rem"
-          >
-            <RiHomeLine size="1.5rem" />
-            Home
-          </Button>
-
           <Button
             color="#ffffff"
             fontWeight="400"
@@ -90,7 +76,10 @@ function Sidebar() {
             fontSize="1.3rem"
             bg="primaryGreen"
             _hover={{ bg: '#003A3C' }}
-            // onClick={() => navigate('/logout')}
+            onClick={() => {
+              navigate('/');
+              localStorage.removeItem('userName');
+            }}
             justifyContent="left"
             gap="0.4rem"
           >
